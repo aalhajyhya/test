@@ -48,3 +48,14 @@ def joke():
 @app.get("/want-another-joke")
 def joke2():
     return {"message":"25"}
+
+@app.get("/tell-me-a-joke2")
+def joke():
+    return {"message":"26"}
+
+@app.get("/want-another-joke2")
+def joke2():
+    return {"message":"27"}
+
+
+
