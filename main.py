@@ -27,3 +27,11 @@ def div(x,y):
 @app.get("/sub/{x}/{y}")
 def sub(x,y):
     return {"message":"result is "+str(int(x)-int(y))}
+
+@app.get("/hello")
+def hello():
+    return {"message":"hello world"}
+
+@app.get("/tell-me-a-joke")
+def joke():
+    return {"message":"a joke"}
