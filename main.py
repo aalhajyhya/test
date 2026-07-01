@@ -14,12 +14,16 @@ def NEIGHBOOR(id):
 def FRIEND(id):
     return {"message":"this is friend "+str(id)}
 
-@app.get("/feat1/{x}/{y}")
-def feature1(x,y):
-    return {"message":"this is feat1 of "+str(int(x)+int(y))+str(type(x))}
+@app.get("/add/{x}/{y}")
+def add(x,y):
+    return {"message":"result is"+str(int(x)+int(y))}
 
 @app.get("/div/{x}/{y}")
 def div(x,y):
     x=int(x)
     y=int(y)
     return {"message":"result is "+str(x/y)}
+
+@app.get("/sub/{x}/{y}")
+def sub(x,y):
+    return {"message":"result is "+str(int(x)-int(y))}
