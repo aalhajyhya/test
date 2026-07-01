@@ -17,3 +17,7 @@ def FRIEND(id):
 @app.get("/feat1/{x}/{y}")
 def feature1(x,y):
     return {"message":"this is feat1 of "+str(int(x)+int(y))+str(type(x))}
+
+@app.get("/hello")
+def hello():
+    return {"message":"hello world"}
